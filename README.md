@@ -1,6 +1,7 @@
 
 # VRHCF: Cross-Source Point Cloud Registration via Voxel Representation and Hierarchical Correspondence Filtering
 
+[Guiyu Zhao](https://scholar.google.com/citations?user=PI1U14MAAAAJ&hl=zh-CN&oi=ao), Zewen Du, Zhentao Guo, [Hongbin Ma](https://scholar.google.com/citations?user=edTXOiMAAAAJ&hl=zh-CN&oi=ao).
 
 [//]: # ([VRHCF: Cross-Source Point Cloud Registration via Voxel Representation and Hierarchical Correspondence Filtering]&#40;https://ieeexplore.ieee.org/document/10356130&#41;.)
 
@@ -12,7 +13,7 @@
 <p align="center"> <img src="figs/overview.png" width="100%"> </p>
 
 
-
+## 2. Getting started
 ### (1) Setup
 This code has been tested with Python 3.9, Pytorch 1.11.0, CUDA 11.1 on Ubuntu 20.04.
 
@@ -22,7 +23,7 @@ git clone https://github.com/GuiyuZhao/VRHCF && cd VRHCF
 ```
 - Setup conda virtual environment
 ```
-conda create -n spherenet python=3.9
+conda create -n VRHCF python=3.9
 source activate VRHCF
 conda install pytorch==1.11.0 torchvision==0.12.0 cudatoolkit=11.3 -c pytorch
 conda install -c open3d-admin open3d==0.11.1
@@ -30,10 +31,10 @@ pip install "git+git://github.com/erikwijmans/Pointnet2_PyTorch.git#egg=pointnet
 ```
 - Prepare the datasets
 
-You can download the 3DCSR dataset from [Baidu Yun](https://pan.baidu.com/s/1FB7IUbKAAlk7RVnB_AgwcQ) (Verification code:d1vn),
+You can download the 3DCSR dataset from [3DCSR benchmark](http://multimediauts.org/3D_data_for_registration),
 and download processed 3DMatch dataset from [Baidu Yun](https://pan.baidu.com/s/1KltoYtAnNSEzBw3j6QOL1w?pwd=6nkf) (Verification code:6nkf).
 
-Then, the folder is organised as follows:
+Then, the data is organised as follows:
 ```
 --data--3DMatch--fragments
               |--intermediate-files-real
@@ -45,7 +46,7 @@ Then, the folder is organised as follows:
             
 
 ```
-The pretrained models and features can be downloaded from [model](https://pan.baidu.com/s/1FB7IUbKAAlk7RVnB_AgwcQ)
+The pretrained models and features can be downloaded from [releases](https://github.com/GuiyuZhao/VRHCF/releases/tag/v1.0)
       
 
 ### (2) 3DMatch
@@ -145,6 +146,7 @@ In this project, we use parts of the implementations of the following works:
 * [SpinNet](https://github.com/QingyongHu/SpinNet)
 * [Geotransformer](https://github.com/qinzheng93/GeoTransformer)
 * [SC2-PCR](https://github.com/ZhiChen902/SC2-PCR)
+* [3DCSR dataset](https://github.com/XiaoshuiHuang/CSBaselineAlgo)
 
 
 
