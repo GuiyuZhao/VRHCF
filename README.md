@@ -1,6 +1,8 @@
 
 # VRHCF: Cross-Source Point Cloud Registration via Voxel Representation and Hierarchical Correspondence Filtering
 
+[VRHCF: Cross-Source Point Cloud Registration via Voxel Representation and Hierarchical Correspondence Filtering (ArXiv version, accepted by ICME)](https://arxiv.org/abs/2403.10085).
+
 [Guiyu Zhao](https://scholar.google.com/citations?user=PI1U14MAAAAJ&hl=zh-CN&oi=ao), Zewen Du, Zhentao Guo, [Hongbin Ma](https://scholar.google.com/citations?user=edTXOiMAAAAJ&hl=zh-CN&oi=ao).
 
 [//]: # ([VRHCF: Cross-Source Point Cloud Registration via Voxel Representation and Hierarchical Correspondence Filtering]&#40;https://ieeexplore.ieee.org/document/10356130&#41;.)

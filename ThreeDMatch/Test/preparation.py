@@ -141,8 +141,9 @@ if __name__ == '__main__':
     all_trans_matrix = {}
     is_rotate_dataset = False
     for scene in scene_list:
-        pcdpath = f"/home/zhaoguiyu/code/SphereNet/data/3DMatch/fragments/{scene}/"
-        interpath = f"/home/zhaoguiyu/code/SphereNet/data/3DMatch/intermediate-files-real/{scene}/"
+        pcdpath = f"../../data/3DMatch/fragments/{scene}/"
+        interpath = f"../../data/3DMatch/intermediate-files-real/{scene}/"
+        # /home/zhaoguiyu/code/SphereNet/
         keyptspath = interpath
         descpath = os.path.join('.', f"SphereNet_desc_{model_str}/{scene}/")
         if not os.path.exists(descpath):

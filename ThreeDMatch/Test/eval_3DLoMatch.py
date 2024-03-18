@@ -112,10 +112,10 @@ if __name__ == '__main__':
         num_one_scene = 0
 
         # 3DCSR dataset directory. Please replace it with your path
-        overlappath=f"/home/zhaoguiyu/code/SphereNet/data/3DMatch/fragments/3DLoMatch/{scene}/"
-        pcdpath = f"/home/zhaoguiyu/code/SphereNet/data/3DMatch/fragments/{scene}/"
-        interpath = f"/home/zhaoguiyu/code/SphereNet/data/3DMatch/intermediate-files-real/{scene}/"
-        gtpath = f'/home/zhaoguiyu/code/SphereNet/data/3DMatch/fragments/3DLoMatch/{scene}/'
+        overlappath=f"../../data/3DMatch/fragments/3DLoMatch/{scene}/"
+        pcdpath = f"../../data/3DMatch/fragments/{scene}/"
+        interpath = f"../../data/3DMatch/intermediate-files-real/{scene}/"
+        gtpath = f'../../data/3DMatch/fragments/3DLoMatch/{scene}/'
         keyptspath = interpath  # os.path.join(interpath, "keypoints/")
         descpath = os.path.join(".", f"{desc_name}_desc_{timestr}/{scene}")
         gtLog = loadlog(gtpath)

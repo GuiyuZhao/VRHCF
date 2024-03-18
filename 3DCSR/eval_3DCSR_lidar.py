@@ -117,7 +117,7 @@ if __name__ == '__main__':
                      final_k=15, )
 
     # 3DCSR dataset directory. Please replace it with your path
-    directory = "/media/zhaoguiyu/新加卷/cross-source-dataset/cross-source-dataset/kinect_lidar"
+    directory = "../data/3DCSR/kinect_lidar"
     folders = [folder for folder in os.listdir(directory) if os.path.isdir(os.path.join(directory, folder))]
     RR_sum = 0
     PIR_sum =0
